@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kahit Sino Programmer</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo-container">
+        <img
+          src="/images/code-6127616_1280.png"
+          alt="Company Logo"
+          class="navbar-logo"
+        />
+        <span class="company-name">Kahit Sino Programmer</span>
+      </div>
+      <label for="theme-toggle-checkbox" class="theme-toggle">
+        <input type="checkbox" id="theme-toggle-checkbox" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <h1>MY ACTIVITIES</h1>
+
+    <script>
+      // JavaScript code for theme toggling
+      document
+        .getElementById("theme-toggle-checkbox")
+        .addEventListener("change", function () {
+          if (this.checked) {
+            document.body.classList.add("dark-theme");
+            document.body.classList.remove("light-theme");
+          } else {
+            document.body.classList.add("light-theme");
+            document.body.classList.remove("dark-theme");
+          }
+        });
+    </script>
+  </body>
+</html>
